@@ -1,4 +1,4 @@
-# Todo List App
+# Todo List
 
 A simple and efficient Todo List application built using **React**, **Zustand**, **Immer**, **Zookeeper**, and **Vite** for fast development and bundling. This project demonstrates how to manage application state and perform updates in a highly efficient manner while maintaining immutability and simplicity.
 
