@@ -18,8 +18,14 @@ const Counter = () => {
 // eslint-disable-next-line react/prop-types
 const ChildComponent = ({ count }) => {
   //const increment = useCounterStore((state) => state.increment);
-  const incrementAsync = useCounterStore((state) => state.incrementAsync);
-  const decrement = useCounterStore((state) => state.decrement);
+
+  // const incrementAsync = useCounterStore((state) => state.incrementAsync);
+  // const decrement = useCounterStore((state) => state.decrement);
+
+  const { incrementAsync, decrement } = useCounterStore((state) => ({
+    incrementAsync: state.incrementAsync,
+    decrement: state.decrement,
+  }));
 
   useEffect(() => {
     //logCount();
