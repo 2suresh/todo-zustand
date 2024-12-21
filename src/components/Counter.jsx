@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import useCounterStore from '../store/counterStore';
 
-const logCount = () => {
-  const count = useCounterStore.getState().count;
-  console.log('count: ', count);
-};
+// const logCount = () => {
+//   const count = useCounterStore.getState().count;
+//   console.log('count: ', count);
+// };
 
 const setCounteState = () => {
   useCounterStore.setState({ count: 100 });
